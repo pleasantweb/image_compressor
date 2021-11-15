@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Scheherazade+New&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  min-height: 80vh;
+  margin-bottom: 100px;
+}
+
+section nav {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  background-color: #2b92e4;
+  color: white;
+  font-family: 'Scheherazade New', serif;
+}
+
+section nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section nav .logo svg {
+  font-size: 1.9rem;
+}
+
+section nav .logo h1 {
+  padding-left: 5px;
+}
+
+section .container {
+  height: auto;
+}
+
+section .container .form_container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+section .container .form_container form {
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  section .container .form_container form {
+    width: 90%;
+  }
+}
+
+section .container .form_container form .input-field {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding-left: 50px;
+}
+
+@media (max-width: 500px) {
+  section .container .form_container form .input-field {
+    width: 100%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    padding-left: 10px;
+  }
+}
+
+section .container .form_container form .input-field label {
+  font-size: 1.9rem;
+  cursor: pointer;
+  background-color: #2b92e4;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+section .container .form_container form .input-field input[type=file]::file-selector-button {
+  display: none;
+}
+
+section .container .form_container form .input-field input[type=file]::-webkit-file-upload-button {
+  display: none;
+}
+
+section .container .form_container form .input-field input[type=file]::-ms-browse {
+  display: none;
+}
+
+section .container .form_container form .input-field input[type=file] {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #2b92e4;
+}
+
+section .container .form_container .action {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .container .form_container .action .compress-div, section .container .form_container .action .resize-div {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .container .form_container .action .compress-div button, section .container .form_container .action .resize-div button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  background: none;
+  font-size: 1.2rem;
+  padding: 0px 30px 5px 30px;
+  line-height: 0;
+  border: none;
+  color: white;
+  background-color: #2595a2;
+  font-family: 'Quicksand', sans-serif;
+}
+
+section .container .form_container .action .compress-div button.disabled, section .container .form_container .action .resize-div button.disabled {
+  opacity: 0.7;
+}
+
+section .container .form_container .action .compress-div .compress-range, section .container .form_container .action .resize-div .compress-range {
+  width: 100%;
+  margin-top: 20px;
+  height: 100px;
+  border-right: 1px solid gray;
+}
+
+section .container .form_container .action .compress-div .compress-range p, section .container .form_container .action .resize-div .compress-range p {
+  padding: 0;
+}
+
+section .container .form_container .action .compress-div .compress-range input[type=range], section .container .form_container .action .resize-div .compress-range input[type=range] {
+  width: 80%;
+  height: 30px;
+  margin-top: 2px;
+}
+
+section .container .form_container .action .compress-div .resize-range, section .container .form_container .action .resize-div .resize-range {
+  width: 100%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100px;
+}
+
+@media (max-width: 500px) {
+  section .container .form_container .action .compress-div .resize-range, section .container .form_container .action .resize-div .resize-range {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+section .container .form_container .action .compress-div .resize-range input[type=number], section .container .form_container .action .resize-div .resize-range input[type=number] {
+  width: 100px;
+  height: 30px;
+  padding-left: 20px;
+  outline: none;
+  border: 1px solid gray;
+}
+
+section .before-after {
+  width: 90%;
+  height: 400px;
+  margin: 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  section .before-after {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+  }
+}
+
+section .before-after .before, section .before-after .after {
+  width: 45%;
+  height: 300px;
+}
+
+@media (max-width: 500px) {
+  section .before-after .before, section .before-after .after {
+    width: 90%;
+    height: auto;
+  }
+}
+
+section .before-after .before img, section .before-after .after img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  section .before-after .before img, section .before-after .after img {
+    height: 250px;
+  }
+}
+
+section .before-after .before .size-resolution, section .before-after .after .size-resolution {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 500px) {
+  section .before-after .after {
+    margin-top: 50px;
+  }
+}
+
+section .before-after .after .img-div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+section .before-after .after .img-div .img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+section .before-after .after .img-div .img-hover a {
+  background-color: white;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  line-height: 2;
+  font-family: 'Quicksand', sans-serif;
+  visibility: hidden;
+}
+
+section .before-after .after .img-div:hover .img-hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+}
+
+section .before-after .after .img-div:hover .img-hover a {
+  visibility: visible;
+}
+/*# sourceMappingURL=home.css.map */
